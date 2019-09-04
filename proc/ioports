@@ -1,1 +1,39 @@
+0000-001f：dma1            //8237A DMA控制器1
+0020-003f：pic1            //8259A 可编程中断控制器1
+0040-005f: timer           //8253/8254A 定时计数器
+0060-006f: keyboard        //8042键盘控制器
+0070-007f: rtc             //访问CMOS RAM/实时时钟RTC(Real Time Clock)端口
+0080-008f: dma page reg    //DMA 页面寄存器访问端口 0x080-0x09f
+00a0-00bf: pic2            //8259A 可编程中断控制器2
+00c0-00df: dma2            //8237A DMA控制器2
+00f0-00ff: fpu             //协处理器访问端口
+0170-0177: ide1            //IDE 硬盘控制器1
+01f0-01f7: ide0            //IDE 硬盘控制器0
 
+//0x278-0x27f  并行打印机端口2
+
+02f8-02ff: serial(auto)    //串行控制器2
+0376-0376： ide1
+
+//0x378-0x37f  并行打印机端口1
+//0x3b0-0x3bf  单色MDA显示控制器
+
+03c0-03df: vga+             //0x3c0-0x3cf  彩色CGA显示控制器
+                            //0x3d0-0x3df  彩色EGA/VGA显示控制器
+03f6-03f6: ide0             //0x3f0-0x3f7  软盘控制器
+03f8-03ff: serial(auto)     //串行控制器1
+0500-051f: PCI device 8086:24d3 (Intel Corp.)
+0cf8-0cff: PCI conf1
+da00-daff: VIA Technologies, Inc. VT6102 [Rhine-II]
+  da00-daff: via-rhine
+e000-e01f: PCI device 8086:24d4 (Intel Corp.)
+  e000-e01f: usb-uhci
+e100-e11f: PCI device 8086:24d7 (Intel Crop.)
+  e100-e11f: usb-uhci
+e200-e21f: PCI device 8086:24de (Intel Crop.)
+  e200-e21f: usb-uhci
+e300-e31f: PCI device 8086:24d2 (Intel Crop.)
+  e300-e31f: usb-uhci
+f000-f00f: PCI device 8086:24db (Intel Crop.)
+  f000-f007: ide0
+  f008-f00f: ide1
