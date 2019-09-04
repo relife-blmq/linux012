@@ -1,0 +1,5 @@
+#此结构非linux0.12所有
+
+ioports
+    对于使用EISA或PCI等总线结构的现代PC，有64KB的I/O地址空间可供使用。在普通linux系统下通过查看/proc/ioports文件可以得到相关控制器或设置使用的
+  I/O地址范围
